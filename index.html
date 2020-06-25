@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>EOM Rooster Data</title>
+		<style media="screen">
+			#saveButton {
+				padding: 10px;
+				color: white;
+				background-color: #454545;
+				border: 1px solid #000000;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			#saveButton:hover {
+				background-color: #555555;
+			}
+			#viewButton {
+				padding: 10px;
+				color: white;
+				background-color: #454545;
+				border: 1px solid #000000;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			#viewButton:hover {
+				background-color: #555555;
+			}
+			#sButton {
+				padding: 10px;
+				color: white;
+				background-color: #454545;
+				border: 1px solid #000000;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			#sButton:hover {
+				background-color: #555555;
+			}
+		</style>
+	</head>
+	
+	<body bgcolor="#343434">
+		<button type="button" id="saveButton">Save data to server</button>
+		<button type="button" id="viewButton">View saved data</button>
+		<button type="button" id="sButton">Save via web request</button>
+
+		<script type="text/javascript">
+			const sbutton = document.getElementById("saveButton");
+			const vbutton = document.getElementById("viewButton");
+			const ssbutton = document.getElementById("sButton");
+			sbutton.addEventListener("click", function() {
+				document.location.href = document.location.href+"savedata.php";
+			});
+			vbutton.addEventListener("click", function() {
+				document.location.href = document.location.href+"viewdata.php";
+			});
+			ssbutton.addEventListener("click", function() {
+				document.location.href = document.location.href+"savedata2.php";
+			});
+		</script>
+	</body>
+</html>
